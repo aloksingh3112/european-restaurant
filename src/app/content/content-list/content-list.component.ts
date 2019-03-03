@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, Input } from '@angular/core';
+import { Content } from '@angular/compiler/src/render3/r3_ast';
 
 @Component({
   selector: 'app-content-list',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentListComponent implements OnInit {
 
+  @Input() Content;
+
   constructor() { }
 
   ngOnInit() {
+
+
   }
 
 }

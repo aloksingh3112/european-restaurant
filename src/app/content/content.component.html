@@ -1,7 +1,11 @@
 <div class="container mt-4">
 <div class="row">
-  <div class="col-lg-6 col-md-12" *ngFor='let data of datas'>
-       <app-content-list></app-content-list>
+  <div class="col-lg-6 col-md-12" *ngFor='let data of restaurantData | paginate: { itemsPerPage: 10,currentPage:page}'>
+
+       <app-content-list [Content]='data'></app-content-list>
   </div>
+  <pagination-controls (pageChange)="p($event)"></pagination-controls>
+
+
 </div>
 </div>

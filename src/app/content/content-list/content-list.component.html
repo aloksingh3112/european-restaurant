@@ -1,6 +1,6 @@
 <div class="card mt-4 mb-2 ml-4 " style="width: 20rem;">
     <div class="card-header">
-      Featured
+        {{Content.Name}}
     </div>
     <div class="card-body">
       <div class="row">
@@ -8,8 +8,8 @@
             <img class="card-img-top" src="https://cdn4.iconfinder.com/data/icons/home3/102/Untitled-12-512.png" alt="Card image cap" style="width: 5rem;">
         </div>
         <div class="col-md-6">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">ggsipy</p>
+            <h5 class="card-title" >{{Content.City}}</h5>
+            <p class="card-text">Ranking :{{Content.Ranking}}</p>
 
         </div>
 
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="card-footer text-muted">
-        2 days ago
+        Rating : {{Content.Rating}}
       </div>
 </div>
 

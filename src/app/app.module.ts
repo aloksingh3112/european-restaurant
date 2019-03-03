@@ -1,3 +1,4 @@
+import { AppService } from './appservice.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,7 +8,8 @@ import { SearchComponent } from './search/search.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentListComponent } from './content/content-list/content-list.component';
-
+import { NgxPaginationModule } from 'ngx-pagination';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +20,12 @@ import { ContentListComponent } from './content/content-list/content-list.compon
     ContentListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+     NgxPaginationModule,
+     HttpClientModule
+
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
