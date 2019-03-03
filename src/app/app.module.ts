@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContentListComponent } from './content/content-list/content-list.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     SearchComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    ContentListComponent
   ],
   imports: [
     BrowserModule
